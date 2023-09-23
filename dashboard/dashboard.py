@@ -4,10 +4,7 @@ import seaborn as sns
 import streamlit as st
 import numpy as np
 sns.set(style='dark')
-print('Pandas Version: ',pd.__version__)
-print('Seaborn version: ',sns.__version__)
-print('Streamlit Version', st.__version__)
-print('Numpy Version', np.__version__)
+
 def workingday_df(df):
     workingday = df.groupby(by='workingday').cnt.sum().reset_index()
     workingday.rename(columns={'cnt':'sum'}, inplace=True)
