@@ -44,7 +44,7 @@ def sidebar(df):
     max = df['dteday'].max()
 
     with st.sidebar:
-        #st.image('#')
+        st.image('https://static.vecteezy.com/system/resources/previews/000/421/581/original/vector-bicycle-icon.jpg')
         def on_change():
             st.session_state.date = date
 
