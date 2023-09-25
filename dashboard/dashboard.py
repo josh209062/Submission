@@ -115,7 +115,8 @@ def season_chart(df):
     plt.pie(
         x='sum',
         labels='season',
-        data = df
+        data = df,
+        autopct='%1.1f%%'
     )
     plt.title("Nuber of Bike-Sharing by Season \n in thousand", loc="center", fontsize=30)
     st.pyplot(fig)
